@@ -91,7 +91,7 @@ BallMapper <- function( points , values , epsilon )
     average_function_value <- 0
     for ( j in 1:length(points_covered_by_landmarks[[i]]) )
     {
-      average_function_value <- average_function_value+values[ points_covered_by_landmarks[[i]][j], ]
+      average_function_value <- average_function_value+values[ points_covered_by_landmarks[[i]][j] ]
     }
     average_function_value <- average_function_value/length(points_covered_by_landmarks[[i]])
     coloring[i] <- average_function_value
