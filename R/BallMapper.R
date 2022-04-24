@@ -831,3 +831,11 @@ colorByStDevValueOfOtherVariable<- function( outputFromBallMapper , newFunctionO
   }
   return(newColoring)
 }#colorByStDevValueOfOtherVariable
+
+
+
+################## driver code ##################
+FILENAME = "outputs/bm"
+l <- readBallMapperGraphFromFile(FILENAME)
+ColorIgraphPlot(l)
+simpleDynamicNetwork(l)
