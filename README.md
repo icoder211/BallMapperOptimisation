@@ -11,4 +11,5 @@ The optimisations are:
 ## Results
 The Boston property dataset (/R/data) was modified to create datasets of different sizes and here are the runtimes of the CRAN implementation and our C++ code:
 ![Optimised algo performance](ballmapperopt.png)
+
 As can be seen, there is a consistent 100x improvement in runtime.
